@@ -88,6 +88,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
   }
 
 }
-	````
+````
 
 通过以上配置，就成功添加了一个 `PathResourceResolver`。该解析器的作用是将 URL 为 `/webjars/**` 的请求映射到 `classpath:/META-INF/resources/webjars/`。比如请求 `http://localhost:8080/webjars/bootstrap/3.1.0/css/bootstrap.min` 时， Spring MVC 会查找路径为 `classpath:/META-INF/resources/webjars/bootstrap/3.1.0/css/bootstrap.min` 的资源文件。
